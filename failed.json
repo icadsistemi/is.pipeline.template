@@ -1,0 +1,26 @@
+{
+  "text":"$CIRCLE_PROJECT_REPONAME ${CIRCLE_JOB} job failed.",
+  "blocks":[
+    {
+      "type":"header",
+      "text":{
+        "type":"plain_text",
+        "text":"$CIRCLE_PROJECT_REPONAME ${CIRCLE_JOB} job failed on branch $CIRCLE_BRANCH :red_circle:",
+        "emoji":true
+      }
+    },
+    {
+      "type":"actions",
+      "elements":[
+        {
+          "type":"button",
+          "text":{
+            "type":"plain_text",
+            "text":"View Job"
+          },
+          "url":"${CIRCLE_BUILD_URL}"
+        }
+      ]
+    }
+  ]
+}
